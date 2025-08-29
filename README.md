@@ -38,7 +38,9 @@ EasyCRUD/
 - Node.js 16 or higher
 - Maven (or use the included Maven wrapper)
 
-### Backend Setup
+## 1. Deployment with AWS without external Database.
+ 
+### Backend Setup 
 
 1. **Navigate to backend directory:**
    ```bash
@@ -63,7 +65,7 @@ EasyCRUD/
    java -jar target/student-registration-backend-0.0.1-SNAPSHOT.jar
    ```
 
-The backend will start on `http://localhost:8080`
+The backend will start on `http://<public_ip>:8080`
 
 ### Frontend Setup
 
@@ -71,18 +73,22 @@ The backend will start on `http://localhost:8080`
    ```bash
    cd frontend
    ```
+2. export backend ip for .env
+    '''bash
+    export BACKEND=<public_ip> 
+    '''	
 
-2. **Install dependencies:**
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
    ```bash
-   npm run dev
+   npm run build
    ```
 
-The frontend will start on `http://localhost:5173`
+The frontend will start on `http://<public_ip>:5173`
 
 ## 📊 API Endpoints
 
