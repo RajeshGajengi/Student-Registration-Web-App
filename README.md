@@ -73,9 +73,9 @@ The backend will start on `http://<public_ip>:8080`
    ```bash
    cd frontend
    ```
-2. export backend ip for .env
+2.**export backend ip for .env*
     '''bash
-    export BACKEND=<public_ip> 
+    export BACKEND=<public_ip>  # or copy paste public ip in .env for safety
     '''	
 
 3. **Install dependencies:**
