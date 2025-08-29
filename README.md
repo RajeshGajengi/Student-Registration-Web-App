@@ -2,6 +2,7 @@
 
 A full-stack web application for student registration with a React frontend and Spring Boot backend.
 
+
 ## 🚀 Current Status
 
 The application is currently configured to run **without database dependencies** for easy development and testing. All data is stored in memory and will be reset when the application restarts.
