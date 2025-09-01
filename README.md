@@ -32,12 +32,16 @@ EasyCRUD/
 ```
 
 
-## Deployments:
+## Deployment Guide:
 
-1. **AWS deployoment** :
-   For Quick Application Deployment refer [Quick Start Guide](./docs/ec2_deployment.md) 
-2. **Docker Deployemnet** :
-        
+### A. Without Database Connection Application Setup (Frontend + Backend)
+
+1. **AWS deployment** :
+- For Quick Application deployement refer [Quick Start Guide](./docs/ec2_deployment.md) 
+3. **Docker Deployment** :
+
+
+### B. With Database Connection Application Setup (Frontend + Backend + Database)
 
 ## 🗄️ Database Integration (Optional)
 
