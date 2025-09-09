@@ -2,7 +2,7 @@
 below are the chnages we have to do in application for databse integration,
 
 #### 1. Add dependencies to pom.xml:
-```bash
+```pom
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -15,11 +15,11 @@ below are the chnages we have to do in application for databse integration,
 
 ```
 #### 2. Update StudentRegistrationBackendApplicationTests.java
-```
+```bash
 nano src/test/java/com/student/registration/student_registration_backend/StudentRegistrationBackendApplicationTests.java
 ```
 clear all code from this file, and paste below code
-```
+```java
 	package com.student.registration.student_registration_backend;
 	
 	import org.junit.jupiter.api.Test;
@@ -38,11 +38,11 @@ clear all code from this file, and paste below code
 ```
 
 #### 3. Update StudentRegistrationBackendApplication.java
-```
+```bash
 src/main/java/com/student/registration/student_registration_backend/StudentRegistrationBackendApplication.java
 ```
 Paste below code,
-```
+```java
 	package com.student.registration.student_registration_backend;
 	
 	import org.springframework.boot.SpringApplication;
@@ -65,11 +65,11 @@ Paste below code,
 
 #### 4. Update UserController.Java 
 )
-```
+```bash
 nano src/main/java/com/student/registration/student_registration_backend/controller/UserController.java
 ```
 Paste below code
-```
+```java
 package com.student.registration.student_registration_backend.controller;
 
 import com.student.registration.student_registration_backend.model.User;
@@ -115,11 +115,11 @@ public class UserController {
 }
 ```
 #### 5. Update User.java
-```
+```bash
 nano src/main/java/com/student/registration/student_registration_backend/model/User.java
 ```
 Paste below code
-```
+```java
 package com.student.registration.student_registration_backend.model;
 
 import jakarta.persistence.Entity;
@@ -158,12 +158,12 @@ public class User {
 ```
 
 #### 6. Create Repository directory and UserRepository.java file
-```
+```bash
 mkdir src/main/java/com/student/registration/student_registration_backend/repository
 nano src/main/java/com/student/registration/student_registration_backend/repository/UserRepository.java
 ```
 paste below code,
-```
+```java
 package com.student.registration.student_registration_backend.repository;
 
 import com.student.registration.student_registration_backend.model.User;
@@ -179,7 +179,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 #### 5. Update src/main/resources/application.properties
 
-```
+```java
 # Database Configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/student_db
 spring.datasource.username=admin
