@@ -34,14 +34,14 @@ EasyCRUD/
 
 ## Deployment Guide:
 
-### A. Without Database Connection Application Setup (Frontend + Backend)
+### A. Application Setup Without Database Connection(Frontend + Backend)
 
 1. **AWS deployment** :
 - For Quick Application deployement refer [Quick Start Guide](./docs/ec2_deployment.md) 
 3. **Docker Deployment** :
 
 
-### B. With Database Connection Application Setup (Frontend + Backend + Database)
+### B. Application Setup With Database (Frontend + Backend + Database)
 
 ## 🗄️ Database Integration (Optional)
 
